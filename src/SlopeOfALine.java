@@ -19,18 +19,15 @@ public class SlopeOfALine {
             //The Second Point
             System.out.print("What is the value of the 'x' coordinate of your second point?  ");
             double x2 = scan.nextDouble();
-
             System.out.print("What is the value of the 'y' coordinate of your second point?  ");
             double y2 = scan.nextDouble();
-
-
             System.out.println("\nCalculating...");
 
             String answer = "";
             if (x2 - x1 == 0d) {
                 answer = "This is a vertical line with no slope, also known as an Infinity Slope or Undefined Slope";
-            } else {
-
+            }
+            else {
                 double slope = (y2 - y1) / (x2 - x1);
                 answer = "The slope of your line is " + slope;
             }
