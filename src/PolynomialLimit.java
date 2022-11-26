@@ -29,12 +29,13 @@ public class PolynomialLimit {
                 //calculate the limit (basic math)
                 int limitAsXApproachesNumber = ((a * (x * x)) + (b * x)) + c;
                 System.out.println("The limit is: " + limitAsXApproachesNumber);
-
-            } else if (last_input.equalsIgnoreCase("2")) {
+            }
+            else if (last_input.equalsIgnoreCase("2")) {
                 LimitAtInfinity();
             }
 
-        } catch (Exception e) {
+        }
+        catch (Exception e) {
             System.out.println("Please use the proper format... Try again!");
             System.out.println();
             String[] a = new String[5];
@@ -76,9 +77,11 @@ public class PolynomialLimit {
                 else {
                     System.out.println("There is no limit, as x approaches +∞ the answer is: -∞ , as x approaches -∞ the answer is: +∞ ");
                 }
-            } else if (a > 0) {
+            }
+            else if (a > 0) {
                 System.out.println("There is no limit, as x approaches +∞ the answer is: +∞ , as x approaches -∞ the answer is: -∞ ");
-            } else {
+            }
+            else {
                 System.out.println("There is no limit, as x approaches +∞ the answer is: -∞ , as x approaches -∞ the answer is: +∞ ");
             }
         }
